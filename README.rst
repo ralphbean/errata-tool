@@ -49,6 +49,29 @@ Creating a new advisory:
     e.commit()
     print(e.url())
 
+
+errata-tool command-line interface
+----------------------------------
+
+The ``errata-tool`` CLI is a thin wrapper around the classes. You can use it to
+query information from the Errata Tool or create new releases (releng)::
+
+    errata-tool -h
+
+    errata-tool [--staging] <command>
+
+    Sub Commands:
+        erratum    Get an Erratum (advisory)
+        product    Get an ET product
+        release    Get or create an ET release
+
+    Options:
+        --staging  Use staging ET instance
+
+
+More Python Examples
+--------------------
+
 Getting an errata's name:
 
 .. code-block:: python

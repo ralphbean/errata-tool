@@ -95,6 +95,8 @@ popd
 %{python3_sitelib}/*
 %endif # with_python3
 
+# Will go to python3 subpkg when enabled, otherwise to python2
+%{_bindir}/errata-tool
 
 %changelog
 * Wed Aug 31 2016 Ken Dreyer <kdreyer@redhat.com> - 1.0.0-1
